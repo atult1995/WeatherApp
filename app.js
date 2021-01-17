@@ -7,7 +7,7 @@ if(!address){
 }else{
     geocode(address,(error,data)=>{
         if(error){
-            return console.log(error)
+            return console.log("error: "+error)
         }
         forecast(data.lattitude,data.longitude,(error,data)=>{
             if(error){
